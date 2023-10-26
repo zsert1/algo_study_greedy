@@ -9,6 +9,7 @@ for i in range(N):
     array.append(int(input()))
 d = [10001]*(M+1)
 # i는 각각의 화폐단위
+# 보텀업 문제
 for i in range(N):
     # j는 각각의 금액
     for j in range(array[i], M+1):
