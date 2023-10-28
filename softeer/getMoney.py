@@ -1,7 +1,6 @@
 # 금고털이
 w, n = map(int, input().split())
 
-
 result = 0
 weigths = [list(map(int, input().split())) for _ in range(n)]
 weigths.sort(key=lambda x: x[1], reverse=True)
