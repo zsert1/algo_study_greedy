@@ -25,12 +25,16 @@ left = 1
 right = M
 moveCount = 0
 for i in applesPosition:
+    # 바구니에 포함
     if left <= i and i <= right:
         moveCount += 0
+    #  오른쪽으로
     elif right < i:
         moveCount += i-right
         right = i
+        #  3칸이라고 하면 1~3이기때문에 -1을 해주어야한다.
         left = right-(M-1)
+    # 왼쪽에
     elif i < left:
         moveCount += left-i
         left = i
